@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title: string = 'Hello from BridgeLabz'; // Optional title
-  imgUrl: string = 'assets/BL_logo_square_jpg.jpg'; // Path to the BridgeLabz logo
+  title: string = 'Hello from BridgeLabz';
+  imgUrl: string = 'assets/BL_logo_square_jpg.jpg'; // Path to the logo
+
+  onClick(): void {
+    window.open('https://www.bridgelabz.com', '_blank'); // Opens site in a new tab
+  }
 }
